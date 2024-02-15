@@ -5,15 +5,15 @@ int main()
 {
     int N;
     cin >> N;
-    vector<int> P(N);
+    vector<int> S(N);
     for (int i = 0; i < N; i++)
     {
-        cin >> P[i];
+        cin >> S[i];
     }
     int mx = 0;
     for (int i = 1; i < N; i++)
     {
-        mx = max(mx, P[i]);
+        mx = max(mx, S[i]);
     }
-    cout << max(mx - P[0] + 1, 0) << endl;
+    cout << max(mx - S[0] + 1, 0) << endl;
 }
